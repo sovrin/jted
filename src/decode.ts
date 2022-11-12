@@ -28,7 +28,7 @@ export default (token: string, key: string, algorithm: Algorithm = null, validat
     }
 
     if (/BEGIN( RSA)? PUBLIC KEY/.test(key.toString())) {
-        algorithm = 'sha256';
+        algorithm = 'sha512';
     }
 
     algorithm = algorithm || header.alg;

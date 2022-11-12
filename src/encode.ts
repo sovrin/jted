@@ -8,7 +8,7 @@ import {Algorithms} from './enums';
  * Date: 16.12.2020
  * Time: 00:16
  */
-export default (payload: Payload, key: string, algorithm: Algorithm = 'sha256', options?: Options): string => {
+export default (payload: Payload, key: string, algorithm: Algorithm = 'sha512', options?: Options): string => {
     if (!key) {
         throw new Error('Key can\'t be empty');
     }
