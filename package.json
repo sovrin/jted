@@ -11,6 +11,10 @@
     "watch": "mocha -r ts-node/register/transpile-only --reporter dot --watch --watch-files 'src/**/*.ts' 'test/**/*.test.ts'",
     "coverage": "nyc npm test"
   },
+  "files": [
+    "dist",
+    "types"
+  ],
   "devDependencies": {
     "@types/mocha": "^10.0.0",
     "@types/node": "^18.11.9",
