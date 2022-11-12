@@ -1,0 +1,31 @@
+{
+  "name": "jted",
+  "version": "0.1.0",
+  "description": "just JWT en-/decoding",
+  "main": "./dist/index.js",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --project tsconfig.prod.json",
+    "test": "mocha -r ts-node/register/transpile-only --full-trace 'test/**/*.test.ts'",
+    "watch": "mocha -r ts-node/register/transpile-only --reporter dot --watch --watch-files 'src/**/*.ts' 'test/**/*.test.ts'",
+    "coverage": "nyc npm test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.0",
+    "@types/node": "^18.11.9",
+    "mocha": "^10.1.0",
+    "nyc": "^15.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  },
+  "author": {
+    "name": "Oleg Kamlowski",
+    "email": "oleg.kamlowski@thomann.de"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "jwt",
+    "JSON Web Tokens"
+  ]
+}
