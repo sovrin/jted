@@ -7,7 +7,7 @@ import {Algorithm} from './types';
  * Date: 15.12.2020
  * Time: 23:56
  */
-export default (input: string, key: string, algorithm: Algorithm) => {
+export default (input: string, key: string, algorithm: Algorithm): string => {
     const str = createHmac(algorithm, key)
         .update(input)
         .digest('base64')

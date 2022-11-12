@@ -6,6 +6,6 @@ import {Algorithm} from './types';
  * Date: 16.12.2020
  * Time: 00:11
  */
-export default (input: string, key: string, algorithm: Algorithm, signature: string) => (
+export default (input: string, key: string, algorithm: Algorithm, signature: string): boolean => (
     signature === sign(input, key, algorithm)
 );
