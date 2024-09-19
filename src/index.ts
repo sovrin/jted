@@ -6,3 +6,4 @@
 export {default as verify} from './verify';
 export {default as decode} from './decode';
 export {default as encode} from './encode';
+export type {Header, Payload, Algorithm, Options} from './types';
